@@ -1,10 +1,11 @@
-import MyComponent from "./MyComponent";
+import ParentComponent from "./ParentComponent";
 
 const App = () => {
 
   return(
     <div>
-      <MyComponent />
+      <h1>React ForwardRef Example</h1>
+      <ParentComponent />
     </div>
   )
 }
