@@ -1,10 +1,10 @@
 const Greet = (props) => {
-    const { name, heroName} = props;
+    const { name } = props;
 
-    return(
-        <div style={{ display: "flex", justifyContent: "center",  }}>
+    return (
+        <div style={{ display: "flex", justifyContent: "center", }}>
             <h1>
-                Hello {name} a.k.a {heroName}
+                Hello {name}
             </h1>
         </div>
     )
