@@ -1,15 +1,19 @@
-import WithAuth from "./WithAuth";
-import Dashboard from "./DashBoard";
-import MouseTracker from "./MouseTracker";
+import Parent from "./components/Parent/Parent";
+import ColorProvider from "./context/ColorContext";
+
 
 const App = () => {
-  // const AuthenticatedDashboard = WithAuth(Dashboard);
-  return(
-    <div>
-      {/* <AuthenticatedDashboard isAuthenticated={true} user="Hassaan"/> */}
-      <h1>Welcome to the mouse tracker app</h1>
-      <MouseTracker />
-    </div>
+  return (
+    <ColorProvider>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}>
+        <h1>Global State Management with Context API</h1>
+        <Parent />
+      </div>
+    </ColorProvider>
   )
 }
 
